@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="by.creativity.erlang">
+    <module_version install_time="1406399030142" last="true" origin="installer" specification_version="0.1.1">
+        <file crc="3987002646" name="config/Modules/by-creativity-erlang.xml"/>
+        <file crc="818900002" name="modules/by-creativity-erlang.jar"/>
+        <file crc="3604645924" name="modules/ext/antlr-4.2-complete.jar"/>
+    </module_version>
+</module>

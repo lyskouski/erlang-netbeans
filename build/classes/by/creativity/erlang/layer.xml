@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<folder name="Editors">
+    <folder name="text">
+        <folder name="x-erlang">
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="by.creativity.erlang.Bundle"/>
+            <file name="language.instance">
+                <attr name="instanceCreate" methodvalue="by.creativity.erlang.lexer.SqlTokenId.getLanguage"/>
+                <attr name="instanceOf" stringvalue="org.netbeans.api.lexer.Language"/>
+            </file>
+            <folder name="FontsColors">
+                <folder name="NetBeans">
+                    <folder name="Defaults">
+                        <file name="FontAndColors.xml" url="FontAndColors.xml">
+                            <attr name="SystemFileSystem.localizingBundle" stringvalue="by.creativity.erlang.Bundle"/>
+                        </file>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+</folder>
+<folder name="OptionsDialog">
+    <folder name="PreviewExamples">
+        <folder name="text">
+            <file name="x-erlang" url="erlTemplate.erl"/>
+        </folder>
+    </folder>
+</folder>
