@@ -1,15 +1,15 @@
-%%% Module 'sample' as a small description of Erlang
-%%% @author Viachaslau Lyskouski <deus@creativity.by>
+%%% Module 'erlTemplate' as a small description of Erlang
+%%% @author Viachaslau Lyskouski
 %%% @since 2014-07-16
 
-%%% @module sample
--module(sample).
+%%% @module erlTemplate
+-module( erlTemplate ).
 
 %%% @methods ping(Pid, List, String), echo(String)
 -export([ping/3, echo/1]).
 
 %% Response for browser
-% @sample sample:ping(self(), [{request,'Hello World!'}]). flush().
+% @sample erlTemplate:ping(self(), [{request,'Hello World!'}]). flush().
 %
 % @param pid SessionID - User session ID
 % @param list Env - Enviroment params
@@ -21,7 +21,7 @@ ping(SessionID, Env, _Input) ->
 
 %% Response for console
 %
-% @sample sample:echo();
+% @sample erlTemplate:echo();
 % @return string
 echo(Input) ->
     io:format("Response: ~w", [Input]).

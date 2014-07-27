@@ -3,10 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/slaw/NetBeansProjects/ErlangProject/src/by/creativity/erlang/erlTemplate.erl</file>
-            <file>file:/home/slaw/NetBeansProjects/ErlangProject/src/by/creativity/erlang/FontAndColors.xml</file>
-            <file>file:/home/slaw/NetBeansProjects/ErlangProject/src/by/creativity/erlang/lexer/ErlangLexer.java</file>
-            <file>file:/home/slaw/NetBeansProjects/ErlangProject/src/by/creativity/erlang/lexer/ErlangLanguageHierarchy.java</file>
+            <file>file:/home/slaw/NetBeansProjects/git/erlang-netbeans/trunk/nbproject/private/platform-private.properties</file>
+            <file>file:/home/slaw/NetBeansProjects/git/erlang-netbeans/trunk/nbproject/project.xml</file>
+            <file>file:/home/slaw/NetBeansProjects/git/erlang-netbeans/trunk/src/by/creativity/erlang/erlTemplate.erl</file>
+            <file>file:/home/slaw/NetBeansProjects/git/erlang-netbeans/trunk/src/by/creativity/erlang/lexer/ErlangLanguageHierarchy.java</file>
+            <file>file:/home/slaw/NetBeansProjects/git/erlang-netbeans/trunk/manifest.mf</file>
+            <file>file:/home/slaw/NetBeansProjects/git/erlang-netbeans/trunk/nbproject/project.properties</file>
+            <file>file:/home/slaw/NetBeansProjects/git/erlang-netbeans/trunk/build.xml</file>
+            <file>file:/home/slaw/NetBeansProjects/git/erlang-netbeans/trunk/src/by/creativity/erlang/layer.xml</file>
+            <file>file:/home/slaw/NetBeansProjects/git/erlang-netbeans/trunk/nbproject/platform.properties</file>
         </group>
     </open-files>
 </project-private>

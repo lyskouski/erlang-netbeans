@@ -135,6 +135,7 @@
             </module-dependencies>
             <public-packages>
                 <package>by.creativity.erlang</package>
+                <package>by.creativity.erlang.lexer</package>
             </public-packages>
             <class-path-extension>
                 <runtime-relative-path>ext/antlr-4.2-complete.jar</runtime-relative-path>

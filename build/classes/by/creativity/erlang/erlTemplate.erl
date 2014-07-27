@@ -35,3 +35,7 @@ format([]) ->
     "";
 format([{Key, Value} | Env]) ->
     [io_lib:format("<b>~p:</b> ~p<br />\~n", [Key, Value]) | format(Env)].
+
+TestValue = 123 * 1.222 / 12.
+List = [{init, 12},{test, 2}].
+Value = [Find || {init, Find} <- List].
