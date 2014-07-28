@@ -1,7 +1,5 @@
 /*
- *	CarbonFX ValaProject is a plugin for Netbeans IDE for Vala.
- *
- *	Copyright (c) 2011 Carbon Foundation X. All rights reserved.
+ *	CarbonFX Erlang Project is a plugin for Netbeans IDE for Erlang.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:

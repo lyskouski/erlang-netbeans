@@ -15,71 +15,71 @@ public class ErlangParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__62=1, T__61=2, T__60=3, T__59=4, T__58=5, T__57=6, T__56=7, T__55=8, 
-		T__54=9, T__53=10, T__52=11, T__51=12, T__50=13, T__49=14, T__48=15, T__47=16, 
-		T__46=17, T__45=18, T__44=19, T__43=20, T__42=21, T__41=22, T__40=23, 
-		T__39=24, T__38=25, T__37=26, T__36=27, T__35=28, T__34=29, T__33=30, 
-		T__32=31, T__31=32, T__30=33, T__29=34, T__28=35, T__27=36, T__26=37, 
-		T__25=38, T__24=39, T__23=40, T__22=41, T__21=42, T__20=43, T__19=44, 
-		T__18=45, T__17=46, T__16=47, T__15=48, T__14=49, T__13=50, T__12=51, 
-		T__11=52, T__10=53, T__9=54, T__8=55, T__7=56, T__6=57, T__5=58, T__4=59, 
-		T__3=60, T__2=61, T__1=62, T__0=63, TokAtom=64, TokVar=65, TokFloat=66, 
+		T__62=1, T__61=2, T__60=3, T__59=4, T__58=5, T__57=6, T__56=7, T__55=8,
+		T__54=9, T__53=10, T__52=11, T__51=12, T__50=13, T__49=14, T__48=15, T__47=16,
+		T__46=17, T__45=18, T__44=19, T__43=20, T__42=21, T__41=22, T__40=23,
+		T__39=24, T__38=25, T__37=26, T__36=27, T__35=28, T__34=29, T__33=30,
+		T__32=31, T__31=32, T__30=33, T__29=34, T__28=35, T__27=36, T__26=37,
+		T__25=38, T__24=39, T__23=40, T__22=41, T__21=42, T__20=43, T__19=44,
+		T__18=45, T__17=46, T__16=47, T__15=48, T__14=49, T__13=50, T__12=51,
+		T__11=52, T__10=53, T__9=54, T__8=55, T__7=56, T__6=57, T__5=58, T__4=59,
+		T__3=60, T__2=61, T__1=62, T__0=63, TokAtom=64, TokVar=65, TokFloat=66,
 		TokInteger=67, TokChar=68, TokString=69, AttrName=70, Comment=71, WS=72;
 	public static final String[] tokenNames = {
-		"<INVALID>", "'bsr'", "'=<'", "'['", "'*'", "'or'", "'--'", "'<'", "'<='", 
-		"'<<'", "'andalso'", "'=:='", "'band'", "'}'", "'after'", "'case'", "'->'", 
-		"'bnot'", "'xor'", "')'", "':-'", "'orelse'", "'::'", "'='", "'bxor'", 
-		"'fun'", "'div'", "'bor'", "'begin'", "'rem'", "'when'", "'|'", "'!'", 
-		"'..'", "']'", "'of'", "','", "'receive'", "'-'", "'not'", "':'", "'('", 
-		"'if'", "'=/='", "'try'", "'{'", "'...'", "'and'", "'catch'", "'<-'", 
-		"'++'", "'>>'", "'.'", "'+'", "'bsl'", "';'", "'||'", "'>'", "'/='", "'/'", 
-		"'=='", "'#'", "'>='", "'end'", "TokAtom", "TokVar", "TokFloat", "TokInteger", 
+		"<INVALID>", "'bsr'", "'=<'", "'['", "'*'", "'or'", "'--'", "'<'", "'<='",
+		"'<<'", "'andalso'", "'=:='", "'band'", "'}'", "'after'", "'case'", "'->'",
+		"'bnot'", "'xor'", "')'", "':-'", "'orelse'", "'::'", "'='", "'bxor'",
+		"'fun'", "'div'", "'bor'", "'begin'", "'rem'", "'when'", "'|'", "'!'",
+		"'..'", "']'", "'of'", "','", "'receive'", "'-'", "'not'", "':'", "'('",
+		"'if'", "'=/='", "'try'", "'{'", "'...'", "'and'", "'catch'", "'<-'",
+		"'++'", "'>>'", "'.'", "'+'", "'bsl'", "';'", "'||'", "'>'", "'/='", "'/'",
+		"'=='", "'#'", "'>='", "'end'", "TokAtom", "TokVar", "TokFloat", "TokInteger",
 		"TokChar", "TokString", "AttrName", "Comment", "WS"
 	};
 	public static final int
-		RULE_forms = 0, RULE_form = 1, RULE_tokAtom = 2, RULE_tokVar = 3, RULE_tokFloat = 4, 
-		RULE_tokInteger = 5, RULE_tokChar = 6, RULE_tokString = 7, RULE_attribute = 8, 
-		RULE_typeSpec = 9, RULE_specFun = 10, RULE_typedAttrVal = 11, RULE_typedRecordFields = 12, 
-		RULE_typedExprs = 13, RULE_typedExpr = 14, RULE_typeSigs = 15, RULE_typeSig = 16, 
-		RULE_typeGuards = 17, RULE_typeGuard = 18, RULE_topTypes = 19, RULE_topType = 20, 
-		RULE_topType100 = 21, RULE_type200 = 22, RULE_type300 = 23, RULE_type400 = 24, 
-		RULE_type500 = 25, RULE_type = 26, RULE_funType100 = 27, RULE_funType = 28, 
-		RULE_fieldTypes = 29, RULE_fieldType = 30, RULE_binaryType = 31, RULE_binBaseType = 32, 
-		RULE_binUnitType = 33, RULE_attrVal = 34, RULE_function = 35, RULE_functionClause = 36, 
-		RULE_clauseArgs = 37, RULE_clauseGuard = 38, RULE_clauseBody = 39, RULE_expr = 40, 
-		RULE_expr100 = 41, RULE_expr150 = 42, RULE_expr160 = 43, RULE_expr200 = 44, 
-		RULE_expr300 = 45, RULE_expr400 = 46, RULE_expr500 = 47, RULE_expr600 = 48, 
-		RULE_expr700 = 49, RULE_expr800 = 50, RULE_exprMax = 51, RULE_list = 52, 
-		RULE_tail = 53, RULE_binary = 54, RULE_binElements = 55, RULE_binElement = 56, 
-		RULE_bitExpr = 57, RULE_optBitSizeExpr = 58, RULE_optBitTypeList = 59, 
-		RULE_bitTypeList = 60, RULE_bitType = 61, RULE_bitSizeExpr = 62, RULE_listComprehension = 63, 
-		RULE_binaryComprehension = 64, RULE_lcExprs = 65, RULE_lcExpr = 66, RULE_tuple = 67, 
-		RULE_recordExpr = 68, RULE_recordTuple = 69, RULE_recordFields = 70, RULE_recordField = 71, 
-		RULE_functionCall = 72, RULE_ifExpr = 73, RULE_ifClauses = 74, RULE_ifClause = 75, 
-		RULE_caseExpr = 76, RULE_crClauses = 77, RULE_crClause = 78, RULE_receiveExpr = 79, 
-		RULE_funExpr = 80, RULE_atomOrVar = 81, RULE_integerOrVar = 82, RULE_funClauses = 83, 
-		RULE_funClause = 84, RULE_tryExpr = 85, RULE_tryCatch = 86, RULE_tryClauses = 87, 
-		RULE_tryClause = 88, RULE_argumentList = 89, RULE_exprs = 90, RULE_guard = 91, 
-		RULE_atomic = 92, RULE_prefixOp = 93, RULE_multOp = 94, RULE_addOp = 95, 
-		RULE_listOp = 96, RULE_compOp = 97, RULE_ruleClauses = 98, RULE_ruleClause = 99, 
+		RULE_forms = 0, RULE_form = 1, RULE_tokAtom = 2, RULE_tokVar = 3, RULE_tokFloat = 4,
+		RULE_tokInteger = 5, RULE_tokChar = 6, RULE_tokString = 7, RULE_attribute = 8,
+		RULE_typeSpec = 9, RULE_specFun = 10, RULE_typedAttrVal = 11, RULE_typedRecordFields = 12,
+		RULE_typedExprs = 13, RULE_typedExpr = 14, RULE_typeSigs = 15, RULE_typeSig = 16,
+		RULE_typeGuards = 17, RULE_typeGuard = 18, RULE_topTypes = 19, RULE_topType = 20,
+		RULE_topType100 = 21, RULE_type200 = 22, RULE_type300 = 23, RULE_type400 = 24,
+		RULE_type500 = 25, RULE_type = 26, RULE_funType100 = 27, RULE_funType = 28,
+		RULE_fieldTypes = 29, RULE_fieldType = 30, RULE_binaryType = 31, RULE_binBaseType = 32,
+		RULE_binUnitType = 33, RULE_attrVal = 34, RULE_function = 35, RULE_functionClause = 36,
+		RULE_clauseArgs = 37, RULE_clauseGuard = 38, RULE_clauseBody = 39, RULE_expr = 40,
+		RULE_expr100 = 41, RULE_expr150 = 42, RULE_expr160 = 43, RULE_expr200 = 44,
+		RULE_expr300 = 45, RULE_expr400 = 46, RULE_expr500 = 47, RULE_expr600 = 48,
+		RULE_expr700 = 49, RULE_expr800 = 50, RULE_exprMax = 51, RULE_list = 52,
+		RULE_tail = 53, RULE_binary = 54, RULE_binElements = 55, RULE_binElement = 56,
+		RULE_bitExpr = 57, RULE_optBitSizeExpr = 58, RULE_optBitTypeList = 59,
+		RULE_bitTypeList = 60, RULE_bitType = 61, RULE_bitSizeExpr = 62, RULE_listComprehension = 63,
+		RULE_binaryComprehension = 64, RULE_lcExprs = 65, RULE_lcExpr = 66, RULE_tuple = 67,
+		RULE_recordExpr = 68, RULE_recordTuple = 69, RULE_recordFields = 70, RULE_recordField = 71,
+		RULE_functionCall = 72, RULE_ifExpr = 73, RULE_ifClauses = 74, RULE_ifClause = 75,
+		RULE_caseExpr = 76, RULE_crClauses = 77, RULE_crClause = 78, RULE_receiveExpr = 79,
+		RULE_funExpr = 80, RULE_atomOrVar = 81, RULE_integerOrVar = 82, RULE_funClauses = 83,
+		RULE_funClause = 84, RULE_tryExpr = 85, RULE_tryCatch = 86, RULE_tryClauses = 87,
+		RULE_tryClause = 88, RULE_argumentList = 89, RULE_exprs = 90, RULE_guard = 91,
+		RULE_atomic = 92, RULE_prefixOp = 93, RULE_multOp = 94, RULE_addOp = 95,
+		RULE_listOp = 96, RULE_compOp = 97, RULE_ruleClauses = 98, RULE_ruleClause = 99,
 		RULE_ruleBody = 100;
 	public static final String[] ruleNames = {
-		"forms", "form", "tokAtom", "tokVar", "tokFloat", "tokInteger", "tokChar", 
-		"tokString", "attribute", "typeSpec", "specFun", "typedAttrVal", "typedRecordFields", 
-		"typedExprs", "typedExpr", "typeSigs", "typeSig", "typeGuards", "typeGuard", 
-		"topTypes", "topType", "topType100", "type200", "type300", "type400", 
-		"type500", "type", "funType100", "funType", "fieldTypes", "fieldType", 
-		"binaryType", "binBaseType", "binUnitType", "attrVal", "function", "functionClause", 
-		"clauseArgs", "clauseGuard", "clauseBody", "expr", "expr100", "expr150", 
-		"expr160", "expr200", "expr300", "expr400", "expr500", "expr600", "expr700", 
-		"expr800", "exprMax", "list", "tail", "binary", "binElements", "binElement", 
-		"bitExpr", "optBitSizeExpr", "optBitTypeList", "bitTypeList", "bitType", 
-		"bitSizeExpr", "listComprehension", "binaryComprehension", "lcExprs", 
-		"lcExpr", "tuple", "recordExpr", "recordTuple", "recordFields", "recordField", 
-		"functionCall", "ifExpr", "ifClauses", "ifClause", "caseExpr", "crClauses", 
-		"crClause", "receiveExpr", "funExpr", "atomOrVar", "integerOrVar", "funClauses", 
-		"funClause", "tryExpr", "tryCatch", "tryClauses", "tryClause", "argumentList", 
-		"exprs", "guard", "atomic", "prefixOp", "multOp", "addOp", "listOp", "compOp", 
+		"forms", "form", "tokAtom", "tokVar", "tokFloat", "tokInteger", "tokChar",
+		"tokString", "attribute", "typeSpec", "specFun", "typedAttrVal", "typedRecordFields",
+		"typedExprs", "typedExpr", "typeSigs", "typeSig", "typeGuards", "typeGuard",
+		"topTypes", "topType", "topType100", "type200", "type300", "type400",
+		"type500", "type", "funType100", "funType", "fieldTypes", "fieldType",
+		"binaryType", "binBaseType", "binUnitType", "attrVal", "function", "functionClause",
+		"clauseArgs", "clauseGuard", "clauseBody", "expr", "expr100", "expr150",
+		"expr160", "expr200", "expr300", "expr400", "expr500", "expr600", "expr700",
+		"expr800", "exprMax", "list", "tail", "binary", "binElements", "binElement",
+		"bitExpr", "optBitSizeExpr", "optBitTypeList", "bitTypeList", "bitType",
+		"bitSizeExpr", "listComprehension", "binaryComprehension", "lcExprs",
+		"lcExpr", "tuple", "recordExpr", "recordTuple", "recordFields", "recordField",
+		"functionCall", "ifExpr", "ifClauses", "ifClause", "caseExpr", "crClauses",
+		"crClause", "receiveExpr", "funExpr", "atomOrVar", "integerOrVar", "funClauses",
+		"funClause", "tryExpr", "tryCatch", "tryClauses", "tryClause", "argumentList",
+		"exprs", "guard", "atomic", "prefixOp", "multOp", "addOp", "listOp", "compOp",
 		"ruleClauses", "ruleClause", "ruleBody"
 	};
 
@@ -131,7 +131,7 @@ public class ErlangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(203); 
+			setState(203);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
@@ -140,7 +140,7 @@ public class ErlangParser extends Parser {
 				setState(202); form();
 				}
 				}
-				setState(205); 
+				setState(205);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( ((((_la - 38)) & ~0x3f) == 0 && ((1L << (_la - 38)) & ((1L << (38 - 38)) | (1L << (TokAtom - 38)) | (1L << (AttrName - 38)))) != 0) );
@@ -1376,7 +1376,7 @@ public class ErlangParser extends Parser {
 					setState(369); addOp();
 					setState(370); type400(0);
 					}
-					} 
+					}
 				}
 				setState(376);
 				_errHandler.sync(this);
@@ -1454,7 +1454,7 @@ public class ErlangParser extends Parser {
 					setState(381); multOp();
 					setState(382); type500();
 					}
-					} 
+					}
 				}
 				setState(388);
 				_errHandler.sync(this);
@@ -4189,7 +4189,7 @@ public class ErlangParser extends Parser {
 						throw new NoViableAltException(this);
 					}
 					}
-					} 
+					}
 				}
 				setState(784);
 				_errHandler.sync(this);
@@ -5530,7 +5530,7 @@ public class ErlangParser extends Parser {
 			case TokString:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(967); 
+				setState(967);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				do {
@@ -5539,7 +5539,7 @@ public class ErlangParser extends Parser {
 					setState(966); tokString();
 					}
 					}
-					setState(969); 
+					setState(969);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				} while ( _la==TokString );
