@@ -64,7 +64,7 @@
                 </folder>
                 <folder name="Factories">
                     <file name="ErlangDataLoader.instance">
-						<attr name="SystemFileSystem.icon" urlvalue="nbresloc:/by/creativity/erlang/logo_erlang.png"/>
+                        <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/by/creativity/erlang/logo_erlang.png"/>
                         <attr name="dataObjectClass" stringvalue="by.creativity.erlang.erlDataObject"/>
                         <attr name="instanceCreate" methodvalue="org.openide.loaders.DataLoaderPool.factory"/>
                         <attr name="mimeType" stringvalue="text/x-erlang"/>
@@ -88,56 +88,55 @@
             </file>
         </folder>
     </folder>
-	<folder name="Editors">
-		<folder name="text">
-			<folder name="x-erlang">
-				<file name="org-netbeans-modules-editor-NbEditorKit.instance"/>
-				<file name="language.instance">
-					<attr name="instanceCreate" methodvalue="by.creativity.erlang.lexer.ErlangTokenId.getLanguage"/>
-					<attr name="instanceOf" stringvalue="org.netbeans.api.lexer.Language"/>
-				</file>
-				<attr name="SystemFileSystem.localizingBundle" stringvalue="by.creativity.erlang.Bundle"/>
-				<folder name="FontsColors">
-					<folder name="NetBeans">
-						<folder name="Defaults">
-							<file name="FontAndColors.xml" url="FontAndColors.xml">
-								<attr name="SystemFileSystem.localizingBundle" stringvalue="by.creativity.erlang.Bundle"/>
-							</file>
-						</folder>
-					</folder>
-				</folder>
+    <folder name="Editors">
+        <folder name="text">
+            <folder name="x-erlang">
+                <!-- file name="org-netbeans-modules-editor-NbEditorKit.instance"/ -->
+                <attr name="displayName" bundlevalue="by.creativity.erlang.Bundle#Editors/text/x-erlang"/>
+                <file name="language.instance">
+                    <attr name="instanceCreate" methodvalue="by.creativity.erlang.lexer.ErlangTokenId.getLanguage"/>
+                    <attr name="instanceOf" stringvalue="org.netbeans.api.lexer.Language"/>
+                </file>
+                <folder name="FontsColors">
+                    <folder name="NetBeans">
+                        <folder name="Defaults">
+                            <file name="FontAndColors.xml">
+                                <attr name="displayName" bundlevalue="by.creativity.erlang.Bundle#Editors/text/x-erlang/FontsColors/NetBeans/Defaults/FontAndColors.xml"/>
+                            </file>
+                        </folder>
+                    </folder>
+                </folder>
                 <folder name="Preferences">
                     <folder name="Defaults">
                         <file name="by.creativity.erlang-editor-preferences.xml" url="editor-preferences.xml"/>
                     </folder>
                 </folder>
 
-				<!-- file name="by.creativity.erlang-lexer-ErlangParserFactory.instance"/ -->
-				<!-- file name="by.creativity.erlang-parser-SyntaxErrorsHighlightingTaskFactory.instance"/ -->
-	            <!-- file name="by.creativity.erlang-editor-ErlangIndentTaskFactory.instance"/ -->
-			</folder>
-		</folder>
-	</folder>
-	<folder name="OptionsDialog">
-		<folder name="PreviewExamples">
-			<folder name="text">
-				<file name="x-erlang" url="erlTemplate.erl"/>
-			</folder>
-		</folder>
-       <folder name="Editor">
-          <folder name="Formatting">
-              <attr name="position" intvalue="0"/>
-              <folder name="text">
-                  <folder name="x-erlang">
-                      <file name="TabsAndIndents.instance">
+                <file name="by.creativity.erlang-lexer-ErlangParserFactory.instance"/>
+                <file name="by.creativity.erlang-lexer-SyntaxErrorsHighlightingTaskFactory.instance"/>
+                <!-- file name="by.creativity.erlang-editor-ErlangIndentTaskFactory.instance"/ -->
+            </folder>
+        </folder>
+    </folder>
+    <folder name="OptionsDialog">
+        <folder name="PreviewExamples">
+            <folder name="text">
+                <file name="x-erlang" url="erlTemplate.erl"/>
+            </folder>
+        </folder>
+        <folder name="Editor">
+            <folder name="Formatting">
+                <attr name="position" intvalue="0"/>
+                <folder name="text">
+                    <folder name="x-erlang">
+                        <file name="TabsAndIndents.instance">
                             <attr name="instanceOf" stringvalue="org.netbeans.modules.options.editor.spi.PreferencesCustomizer$Factory"/>
                             <attr name="instanceCreate" methodvalue="org.netbeans.modules.options.editor.spi.CustomizerFactories.createDefaultTabsAndIndentsCustomizerFactory"/>
-							<attr name="position" intvalue="100"/>
-                      </file>
-                  </folder>
-			  </folder>
-          </folder>
-      </folder>
+                            <attr name="position" intvalue="100"/>
+                        </file>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
     </folder>
 </filesystem>
-

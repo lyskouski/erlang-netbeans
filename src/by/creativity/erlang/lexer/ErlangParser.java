@@ -85,6 +85,31 @@ public class ErlangParser extends Parser {
 
 	@Override
 	public String getGrammarFileName() { return "Erlang.g4"; }
+        
+        public List<SyntaxError> syntaxErrors = new ArrayList<>();
+    	private final java.util.regex.Pattern msgPattern = java.util.regex.Pattern.compile(".*missing KW_([A-Z]*) at (.*)");
+
+    	public String getErrorMessage(org.antlr.v4.runtime.RecognitionException e, String[] tokenNames) {
+    		String message = super.getErrorHeader(e);//getErrorMessage(e, tokenNames);
+    		SyntaxError syntaxError = new SyntaxError();
+    		//syntaxError.exception = e;
+    		
+    		java.util.regex.Matcher m = msgPattern.matcher(message);
+    		if (m.matches()) {
+    			message = "'"+m.group(1).toLowerCase() + "' expected at " + m.group(2);
+    		}
+    		
+    		syntaxError.message = message;
+    		syntaxErrors.add(syntaxError);
+    		return message;
+    	}
+
+    	public static class SyntaxError {
+    		public org.antlr.runtime.RecognitionException exception;
+    		public String message;
+    		public int line;
+    		public int charPositionInLine;
+    	}
 
 	@Override
 	public String[] getTokenNames() { return tokenNames; }
